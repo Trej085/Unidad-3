@@ -15,3 +15,4 @@ if (confirmacion.toLowerCase() === "si") {
 } else {
     console.log("Registros borrados");
 }
+
