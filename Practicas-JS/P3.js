@@ -48,3 +48,5 @@ function despedida(nombre) {
     alert("Esperamos que hayas disfrutado del programa. ¡Hasta pronto! 👋");
 }
 
+// Llamar a la función principal
+solicitarDatos();
