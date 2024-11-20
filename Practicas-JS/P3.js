@@ -7,18 +7,28 @@ function solicitarDatos() {
     let actividad = prompt(nombre + ", ingresa tu actividad favorita:");
 
     // Confirmar si desea guardar la información
-    let respuesta = confirm("¿Estás seguro de que deseas guardar la información?");
-    
-    // Verificar la respuesta final 
-    let eliminar = confirm("¿Estás seguro de que tu información es correcta?");
-    if (eliminar) {
-        alert("Su información ha sido guardada correctamente.");
-        alert(`${nombre}, tu actividad favorita es ${actividad}`);
-    } else {
-        alert("Su información ha sido borrada.");
-        return solicitarDatos(); // Llamar de nuevo a la función SolicitarDatos
+    function confirmarDatos(nombre, actividad) {
+        let confirmar = confirm(`¿Es correcto? \nNombre: ${nombre} \nActividad favorita: ${actividad}`);
+        return confirmar; // Retornar verdadero o falso según la respuesta
     }
-}
+    // Verificar la respuesta final 
+    function mostrarMensajeFinal(confirmado, nombre, actividad) {
+        if (confirmado) {
+            alert("Su información ha sido guardada correctamente.");
+            alert(`${nombre}, tu actividad favorita es ${actividad}`);
+        } else {
+            alert("Su información ha sido borrada.");
+            function volverAIntentar() { //Pregunta si desea volver a introducir los datos
+                let reintentar = confirm("¿Deseas volver a ingresar los datos?");
+                return solicitarDatos;
 
-// Llamar a la función 
-solicitarDatos();
+            }
+        }
+        // Despedida 
+        function despedida(nombre) {
+            alert(`¡Gracias por participar, ${nombre}! 😊`);
+            alert("Esperamos que hayas disfrutado del programa. ¡Hasta pronto! 👋");
+        }
+    }
+
+}
