@@ -1,18 +1,24 @@
-// Bienvenida y Solicitar datos al usuario
-let nombre = prompt("¿Cual es tu nombre?");
-alert("Bienvenido,"+ nombre + "!");
+function solicitarDatos() {
+    // Solicitar el nombre
+    let nombre = prompt("¿Cuál es tu nombre?");
+    alert("¡Bienvenido, " + nombre + "!"); //Bienvenida al usuario
 
-let actividad = prompt(nombre + "  ingresa tu actividad favorita:");
+    // Solicitar la actividad favorita
+    let actividad = prompt(nombre + ", ingresa tu actividad favorita:");
 
-//
-let respuesta = confirm("¿Estas seguro de que desea guardar la informacion?");
-
-// Verificar la respuesta y mostrar el mensaje final correspondiente
-let eliminar = confirm("¿Estas seguro de que tu informacion es correcta?");
-if (eliminar) {
-    alert("Su informacion ha sido guardada correctamente:");
-    alert(`${nombre}, Tu actividad favorita es ${actividad}`);
-} else{
-    alert("Su informacion ha sido borrada");
+    // Confirmar si desea guardar la información
+    let respuesta = confirm("¿Estás seguro de que deseas guardar la información?");
+    
+    // Verificar la respuesta final 
+    let eliminar = confirm("¿Estás seguro de que tu información es correcta?");
+    if (eliminar) {
+        alert("Su información ha sido guardada correctamente.");
+        alert(`${nombre}, tu actividad favorita es ${actividad}`);
+    } else {
+        alert("Su información ha sido borrada.");
+        return solicitarDatos(); // Llamar de nuevo a la función SolicitarDatos
+    }
 }
 
+// Llamar a la función 
+solicitarDatos();
