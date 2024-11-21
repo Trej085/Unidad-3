@@ -1,5 +1,5 @@
 # Unidad-3
-# Practicas-JS-P1.js - Practica 1 - Primer script en JavaScript.
+# Practica 1 - Primer script en JavaScript.
 Realizar portafolio de practicas.
 - Dentro de cada elemento del grid habra una practica de la unidad.
 - Imprimir en consola nombre completo y en otra linea numero de control.
