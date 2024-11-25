@@ -22,11 +22,7 @@ let materia = {
   
     // Método para imprimir el horario
     imprimirHorario: function() {
-      return `${this.Materia1.nombre}: ${this.Materia1.horario}\n` +
-             `${this.Materia2.nombre}: ${this.Materia2.horario}\n` +
-             `${this.Materia3.nombre}: ${this.Materia3.horario}\n` +
-             `${this.Materia4.nombre}: ${this.Materia4.horario}\n` +
-             `${this.Materia5.nombre}: ${this.Materia5.horario}`;
+      return this.Materia1 + this.Materia2;
     }
   };
   
