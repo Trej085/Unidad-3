@@ -49,7 +49,7 @@ h2 {
 }
 
 .grid:hover {
-    background-color: #EC8305;
+    background-color: #05ec4a;
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
