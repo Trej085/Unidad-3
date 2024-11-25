@@ -1,21 +1,21 @@
 
 body{
-    background-color: #0037ff38;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #091057;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
-    color: #507687;
+    color: black;
 }
 h1{
     text-align: center;
     font-size: 4rem;
-    color: #FCFAEE;
+    color: #DBD3D3;
 }
 h2 {
     text-align: center;
     font-size: 3rem;
-    color: #FCFAEE;
+    color: #DBD3D3;
 }
 .bento{
     display: grid;
@@ -26,7 +26,7 @@ h2 {
 
 .grid{
 
-    background-color: #384B70;
+    background-color: #024CAA;
     padding: 0em;
     border-radius: .5em;
     text-align: center;
@@ -39,7 +39,7 @@ h2 {
 
 .grid h3{
     font-size: 3em;
-    color: #FCFAEE;
+    color: aliceblue;
 }
 .grid p{
     font-size: 1.5em;
@@ -49,7 +49,7 @@ h2 {
 }
 
 .grid:hover {
-    background-color: #eca305;
+    background-color: #EC8305;
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
