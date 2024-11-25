@@ -44,7 +44,6 @@ function volverAIntentar() {
 
 // Función de despedida
 function despedida(nombre) {
-    alert(`¡Gracias por participar, ${nombre}! 😊`);
     alert("Esperamos que hayas disfrutado del programa. ¡Hasta pronto! 👋");
 }
 
