@@ -22,19 +22,19 @@ let materia = {
   
     // Método para imprimir el horario
     imprimirHorario: function() {
-      return `Horario de ${this.Materia1.nombre}: ${this.Materia1.horario}\n` +
-             `Horario de ${this.Materia2.nombre}: ${this.Materia2.horario}\n` +
-             `Horario de ${this.Materia3.nombre}: ${this.Materia3.horario}\n` +
-             `Horario de ${this.Materia4.nombre}: ${this.Materia4.horario}\n` +
-             `Horario de ${this.Materia5.nombre}: ${this.Materia5.horario}`;
+      return `${this.Materia1.nombre}: ${this.Materia1.horario}\n` +
+             `${this.Materia2.nombre}: ${this.Materia2.horario}\n` +
+             `${this.Materia3.nombre}: ${this.Materia3.horario}\n` +
+             `${this.Materia4.nombre}: ${this.Materia4.horario}\n` +
+             `${this.Materia5.nombre}: ${this.Materia5.horario}`;
     }
   };
   
-  // Preguntar al usuario si quiere ver el horario
+  // Preguntar si quiere ejecutar el objeto
   function preguntarMostrarHorario() {
     let respuesta = confirm("¿Quieres ver el horario de las materias?");
     if (respuesta) {
-      // Corregir aquí para llamar a imprimirHorario
+      // Imprime el horario
       console.log(materia.imprimirHorario());
     } else {
       console.log("No se mostraron los horarios.");
