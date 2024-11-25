@@ -12,30 +12,35 @@ let materia = {
       horario: "Miércoles 02:00 - 03:00"
     },
     Materia4: {
-      nombre: "Programacion Web",
+      nombre: "Programación Web",
       horario: "Jueves 05:00 - 06:00"
     },
     Materia5: {
-        nombre: "Lenguajes y Automatas",
-        horario: "Jueves 06:00 - 07:00"
-    },  
-    mostrarMaterias: function () {
-      return this.Materia1 + this.Materia2 + this.Materia3 + this.Materia4 + this.Materia5
+      nombre: "Lenguajes y Autómatas",
+      horario: "Jueves 06:00 - 07:00"
+    },
+  
+    // Método para imprimir el horario
+    imprimirHorario: function() {
+      return `Horario de ${this.Materia1.nombre}: ${this.Materia1.horario}\n` +
+             `Horario de ${this.Materia2.nombre}: ${this.Materia2.horario}\n` +
+             `Horario de ${this.Materia3.nombre}: ${this.Materia3.horario}\n` +
+             `Horario de ${this.Materia4.nombre}: ${this.Materia4.horario}\n` +
+             `Horario de ${this.Materia5.nombre}: ${this.Materia5.horario}`;
     }
-};
-// Función para ejecutar el botón virtual
-function mostrarMateriasBoton() {
-    let ejecutar = confirm("¿Deseas mostrar las materias del semestre?");
-    if (ejecutar) {
-      alert(materias.mostrarMaterias());
+  };
+  
+  // Preguntar al usuario si quiere ver el horario
+  function preguntarMostrarHorario() {
+    let respuesta = confirm("¿Quieres ver el horario de las materias?");
+    if (respuesta) {
+      // Corregir aquí para llamar a imprimirHorario
+      console.log(materia.imprimirHorario());
     } else {
-      alert("Operación cancelada.");
+      console.log("No se mostraron los horarios.");
     }
   }
   
-  // Llamar a la función del botón virtual
-  mostrarMateriasBoton();
-  
-  
-  console.log(materia.mostrarMaterias());
+  // Llamar a la función para preguntar
+  preguntarMostrarHorario();
   

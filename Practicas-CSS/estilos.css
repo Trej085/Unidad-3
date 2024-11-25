@@ -1,20 +1,20 @@
 
 body{
-    background-color: #091057;
+    background-color: #B8001F;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: #507687;
 }
 h1{
     text-align: center;
     font-size: 4rem;
-    color: #DBD3D3;
+    color: #FCFAEE;
 }
 h2 {
     text-align: center;
     font-size: 3rem;
-    color: #DBD3D3;
+    color: #FCFAEE;
 }
 .bento{
     display: grid;
@@ -25,7 +25,7 @@ h2 {
 
 .grid{
 
-    background-color: #024CAA;
+    background-color: #384B70;
     padding: 0em;
     border-radius: .5em;
     text-align: center;
@@ -38,7 +38,7 @@ h2 {
 
 .grid h3{
     font-size: 3em;
-    color: aliceblue;
+    color: #FCFAEE;
 }
 .grid p{
     font-size: 1.5em;
