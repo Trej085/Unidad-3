@@ -1,12 +1,12 @@
-// Crear un arreglo inicial con algunos números
-let numeros = [10, 20, 30];
+// arreglo inicial 
+let numeros = [5, 10, 15];
 
-// Bucle para permitir al usuario agregar más números al arreglo
+//  agregar más números al arreglo
 let continuar = true;
 
 while (continuar) {
     let entrada = prompt("Ingresa un número para agregar al arreglo (o escribe 'salir' para terminar):");
-    
+
     if (entrada.toLowerCase() === "salir") {
         continuar = false; // Terminar el bucle
     } else {

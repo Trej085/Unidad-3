@@ -1,7 +1,7 @@
-// Crear un arreglo vacío para almacenar las calificaciones
+//  arreglo vacío para almacenar las calificaciones
 let calificaciones = [];
 
-// Bucle para solicitar calificaciones al usuario
+//  solicitar calificaciones al usuario
 let continuar = true;
 
 while (continuar) {

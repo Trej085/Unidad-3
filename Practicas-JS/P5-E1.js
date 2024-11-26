@@ -1,7 +1,7 @@
 //  arreglo vacío para almacenar las frutas
 let frutas = [];
 
-// Bucle para solicitar nombres de frutas al usuario
+//  solicitar nombres de frutas al usuario
 let continuar = true;
 
 while (continuar) {
