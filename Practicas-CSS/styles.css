@@ -75,6 +75,10 @@ h3{
     height: auto;
 }
 
+button{
+    align-items: center;
+}
+
 
 /* Aquí no debe haber reglas de grid-column fuera de los media queries */
 
