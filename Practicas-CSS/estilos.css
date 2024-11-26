@@ -1,6 +1,10 @@
 
 body{
     background-color: #060a33;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
 }
 a{
     text-decoration: none;
@@ -10,11 +14,23 @@ h1{
     text-align: center;
     font-size: 4rem;
     color: #DBD3D3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 h2 {
     text-align: center;
     font-size: 3rem;
     color: #DBD3D3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white ;  
 }
 .bento{
     display: grid;
@@ -89,4 +105,8 @@ h1 {
 color: #37ff0079;
 }
 }
-
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
