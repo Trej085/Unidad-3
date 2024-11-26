@@ -64,9 +64,10 @@ h3{
 }
 
 .grid:hover {
-    background-color: #05ec4a;
+    background-color: #0a595d85 ;
     transform: scale(1.05);
     transition: transform 0.3s ease;
+    
 }
 
 .icon{
