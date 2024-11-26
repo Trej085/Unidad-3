@@ -64,7 +64,7 @@ h3{
 }
 
 .grid:hover {
-    background-color: #0a595d85 ;
+    background-color: #626ac26f ;
     transform: scale(1.05);
     transition: transform 0.3s ease;
     
@@ -103,7 +103,7 @@ grid-column: auto; /* Ajusta las columnas según el tamaño */
 grid-column: auto;
 }
 h1 {
-color: #37ff0079;
+color: #0015ff79;
 }
 }
 .roboto-medium {
