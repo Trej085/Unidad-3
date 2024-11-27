@@ -24,3 +24,18 @@ Uso de Funciones organizadas
     - Una funcion para mostrar el mensaje final.
     - Una funcion de uso libre.
 - Usar alert, prompt y confirm.
+
+# Practica 4 - Ejercicio 1 - Crear un objeto en JS.
+
+# Practica 4 - Ejercicio 2 - Crear un programa donde el usuario ingrese las calificaciones.
+
+# Prcatica 5 - Ejercucio 1 -
+
+# Prcatica 5 - Ejercucio 2 -
+
+# Prcatica 5 - Ejercucio 3 -
+
+# Prcatica 6 - Manipulacion del DOOM
+
+
+

@@ -17,6 +17,7 @@
 <body>
     <h1 id="titulo">Programación Web</h1>
     <h2 id="subtitulo">Unidad 3</h2>
+    <script src="../Practicas-JS/index.js"></script>
 
     <div class="bento">
         <a href="Practicas-HTML/P1.html">
@@ -94,7 +95,7 @@
         <a href="Practicas-HTML/P5-E1.html">
             <div class="grid grid6">
                 <h3>Practica 5 - Ejercicio 1</h3>
-                <p>Arreglos p1</p>
+                <p>Arreglo de Frutas</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2">
                     <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
@@ -109,7 +110,7 @@
         <a href="Practicas-HTML/P5-E2.html">
             <div class="grid grid7">
                 <h3>Practica 5 - Ejercicio 2</h3>
-                <p>Arreglos P2</p>
+                <p>Arreglo de Calificaciones</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2">
                     <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
@@ -124,7 +125,7 @@
         <a href="Practicas-HTML/P5-E3.html">
             <div class="grid grid8">
                 <h3>Practica 5 - Ejercicio 3</h3>
-                <p>Arreglos P3</p>
+                <p>Arreglo de numeros</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                     stroke-linecap="round" stroke-linejoin="round" width="32" height="32" stroke-width="2">
                     <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z"></path>
@@ -154,24 +155,6 @@
     </div>
     </div>
     <button class="button-modificar" onclick="cambiarBentoGrid()">Cambiar Diseño del Grid</button>
-    
-    <script> // Script del Boton
-        function cambiarBentoGrid() {
-            const bento = document.querySelector('.bento');
-            const grids = document.querySelectorAll('.grid');
-
-            // Cambiar el diseño del bento grid
-            bento.style.gridTemplateColumns = 'repeat(2, 1fr)'; // 2
-            bento.style.gap = '2rem';
-
-            // Cambiar el diseño de los grids individuales
-            grids.forEach((grid, index) => {
-               grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
-                grid.style.color = '#f4f4f4';
-                grid.style.transition = 'transform 0.5s ease, background-color 0.5s ease';
-            });
-        }
-    </script>
 
 </body>
 
