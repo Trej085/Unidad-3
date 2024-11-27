@@ -11,6 +11,78 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <style>
+            body {
+                background-color: #060a33;
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                color: white;
+            }
+    
+            a {
+                text-decoration: none;
+                color: #20bfc0e0;
+            }
+    
+            h1, h2 {
+                text-align: center;
+                font-size: 4rem;
+                color: #DBD3D3;
+            }
+    
+            .bento {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                padding: 1rem;
+            }
+    
+            .grid {
+                background-color: #17a8af85;
+                padding: 0em;
+                border-radius: .5em;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+    
+            .grid h3 {
+                font-size: 2.5em;
+                color: aliceblue;
+            }
+    
+            .grid p {
+                font-size: 1.2em;
+                font-weight: 700;
+            }
+    
+            .grid:hover {
+                background-color: #626ac26f;
+                transform: scale(1.05);
+            }
+    
+            .change-button {
+                display: block;
+                margin: 2rem auto;
+                padding: 1rem 2rem;
+                font-size: 1.5rem;
+                color: #ffffff;
+                background-color: #20bfc0;
+                border: none;
+                border-radius: 0.5rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+    
+            .change-button:hover {
+                background-color: #17a8af;
+                transform: scale(1.1);
+            }
+        </style>
 </head>
 
 <body>
@@ -152,15 +224,26 @@
 
     </div>
     </div>
+    <button class="change-button" onclick="changeBentoGrid()">Cambiar Diseño del Grid</button>
 
     <script>
-        function  modificarh1(){
-            let titulo = document.getElementById("titulo");
-            titulo.innerText = "Nuevo titulo";
+        function changeBentoGrid() {
+            const bento = document.querySelector('.bento');
+            const grids = document.querySelectorAll('.grid');
+
+            // Cambiar el diseño del bento grid
+            bento.style.gridTemplateColumns = 'repeat(2, 1fr)';
+            bento.style.gap = '2rem';
+
+            // Cambiar el diseño de los grids individuales
+            grids.forEach((grid, index) => {
+                grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
+                grid.style.transform = 'rotate(2deg)';
+                grid.style.color = '#f4f4f4';
+                grid.style.transition = 'transform 0.5s ease, background-color 0.5s ease';
+            });
         }
     </script>
-    <button> onclick= "modificarh1()" > Haz clic aqui</button>
-
 
 </body>
 
