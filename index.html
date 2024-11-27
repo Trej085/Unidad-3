@@ -156,11 +156,6 @@
     <button class="button-modificar" onclick="cambiarBentoGrid()">Cambiar Diseño del Grid</button>
     
     <script> // Script del Boton
-        function cambiarh1(){
-            let titulo =document.getElementById("titulo");
-            titulo.innerText = "PROGRAMACION WEB";
-            titulo.style.color= '#6f61ff';
-        }
         function cambiarBentoGrid() {
             const bento = document.querySelector('.bento');
             const grids = document.querySelectorAll('.grid');
@@ -170,19 +165,12 @@
             bento.style.gap = '2rem';
 
             // Cambiar el diseño de los grids individuales
-            function cambiargrid1(){
-                let grid1 = document.getElementsByClassName("grid1");
-                grid1.style.backgroundColor = "red";
-            }
-
-
-
-           // grids.forEach((grid, index) => {
-              // grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
-              //  grid.style.transform = 'rotate(1deg)';
-              //  grid.style.color = '#f4f4f4';
-              //  grid.style.transition = 'transform 1.5s ease, background-color 1.5s ease';
-           // });
+            grids.forEach((grid, index) => {
+               grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
+                grid.style.transform = 'rotate(1deg)';
+                grid.style.color = '#f4f4f4';
+                grid.style.transition = 'transform 1.5s ease, background-color 1.5s ease';
+            });
         }
     </script>
 
