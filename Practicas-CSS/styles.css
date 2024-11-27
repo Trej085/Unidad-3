@@ -135,33 +135,22 @@ h3 {
 }
 
 /* Botones de interacción */
-button {
-    padding: 0.75rem 1.5rem;
-    /* Espaciado interno */
-    margin: 1rem auto;
-    /* Centra el botón y agrega margen */
+.button-modificar{
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #20bfc0;
     border: none;
-    /* Sin bordes */
     border-radius: 0.5rem;
-    /* Bordes redondeados */
-    background-color: #20bfc0e0;
-    /* Fondo en color vibrante */
-    color: white;
-    /* Texto en blanco */
-    font-size: 1rem;
-    /* Tamaño estándar */
-    font-weight: bold;
-    /* Texto destacado */
     cursor: pointer;
-    /* Cambia cursor al pasar el mouse */
-    transition: background-color 0.3s ease;
-    /* Suaviza el cambio de color */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Efecto hover en el botón */
-button:hover {
+.button-modificar:hover {
     background-color: #17a8af;
-    /* Cambio a un tono más oscuro */
+    transform: scale(1.1);
 }
 
 /* Responsividad */
