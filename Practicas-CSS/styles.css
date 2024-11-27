@@ -1,117 +1,260 @@
-
-body{
+/* Estilo global del cuerpo */
+body {
     background-color: #060a33;
+    /* Fondo oscuro */
+    font-family: "Roboto", sans-serif;
+    /* Tipografía base */
+    font-weight: 500;
+    /* Peso de la fuente */
+    font-style: normal;
+    /* Estilo de la fuente */
+    color: white;
+    /* Color del texto */
+    margin: 0;
+    /* Elimina márgenes predeterminados */
+    padding: 0;
+    /* Elimina paddings predeterminados */
+}
+
+/* Estilo para los enlaces */
+a {
+    text-decoration: none;
+    /* Elimina subrayado */
+    color: #20bfc0e0;
+    /* Color de enlace */
+}
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+    /* Centra el texto */
+    font-size: 4rem;
+    /* Tamaño grande para destacar */
+    color: #DBD3D3;
+    /* Color claro para contraste */
+    font-family: "Roboto", sans-serif;
+    /* Tipografía consistente */
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 1rem;
+    /* Espaciado superior */
+}
+
+/* Encabezado secundario */
+h2 {
+    text-align: center;
+    /* Centra el texto */
+    font-size: 3rem;
+    /* Tamaño ligeramente más pequeño que h1 */
+    color: #DBD3D3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 1rem;
+    /* Espaciado inferior */
+}
+
+/* Encabezado terciario */
+h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
 }
-a{
-    text-decoration: none;
-    color:#20bfc0e0;
-}
-h1{
-    text-align: center;
-    font-size: 4rem;
-    color: #DBD3D3;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-h2 {
-    text-align: center;
-    font-size: 3rem;
-    color: #DBD3D3;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-h3{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: white ;  
-}
-.bento{
+
+/* Contenedor de la grilla principal */
+.bento {
     display: grid;
+    /* Diseño de grilla */
     grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas iguales */
     gap: 1rem;
+    /* Espaciado entre elementos */
     padding: 1rem;
+    /* Espaciado interno */
+    margin: 0 auto;
+    /* Centra la grilla */
+    max-width: 1200px;
+    /* Ancho máximo para mejor legibilidad */
 }
 
-.grid{
-
+/* Estilo individual para cada elemento de la grilla */
+.grid {
     background-color: #17a8af85;
-    padding: 0em;
-    border-radius: .5em;
+    /* Fondo semi-transparente */
+    padding: 1rem;
+    /* Espaciado interno */
+    border-radius: 0.5em;
+    /* Bordes redondeados */
     text-align: center;
+    /* Centra el contenido */
     display: flex;
+    /* Caja flexible para centrar elementos */
     flex-direction: column;
+    /* Orientación vertical */
     align-items: center;
+    /* Centra horizontalmente */
     justify-content: center;
-    transition: background-color 0.3s ease;
+    /* Centra verticalmente */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Transiciones suaves */
 }
 
-.grid h3{
-    font-size: 3em;
+/* Estilo del título dentro de cada grid */
+.grid h3 {
+    font-size: 2rem;
+    /* Tamaño medio */
     color: aliceblue;
+    /* Color claro */
 }
-.grid p{
-    font-size: 1.5em;
+
+/* Estilo del texto adicional dentro de cada grid */
+.grid p {
+    font-size: 1.2rem;
+    /* Tamaño más pequeño */
     font-weight: 700;
-    margin-block-start: 0;
-     margin-block-end: 0;
+    /* Texto más grueso */
+    margin: 0.5rem 0;
+    /* Margen superior e inferior */
 }
 
+/* Efecto hover para cada grid */
 .grid:hover {
-    background-color: #626ac26f ;
+    background-color: #626ac26f;
+    /* Cambio de color al pasar el mouse */
     transform: scale(1.05);
-    transition: transform 0.3s ease;
-    
+    /* Aumenta ligeramente el tamaño */
 }
 
-.icon{
+/* Iconos dentro de la grilla */
+.icon {
     width: 3em;
+    /* Tamaño de icono */
     height: auto;
+    /* Mantiene proporción */
 }
 
-button{
-    align-items: center;
+/* Botones de interacción */
+button {
+    padding: 0.75rem 1.5rem;
+    /* Espaciado interno */
+    margin: 1rem auto;
+    /* Centra el botón y agrega margen */
+    border: none;
+    /* Sin bordes */
+    border-radius: 0.5rem;
+    /* Bordes redondeados */
+    background-color: #20bfc0e0;
+    /* Fondo en color vibrante */
+    color: white;
+    /* Texto en blanco */
+    font-size: 1rem;
+    /* Tamaño estándar */
+    font-weight: bold;
+    /* Texto destacado */
+    cursor: pointer;
+    /* Cambia cursor al pasar el mouse */
+    transition: background-color 0.3s ease;
+    /* Suaviza el cambio de color */
 }
 
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #17a8af;
+    /* Cambio a un tono más oscuro */
+}
 
-/* Aquí no debe haber reglas de grid-column fuera de los media queries */
+/* Responsividad */
 
-/* Para pantallas de 768px o menos */
+/* Para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+        /* Reduce el tamaño del título */
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        /* Reduce subtítulos */
+    }
+
+    .bento {
+        grid-template-columns: repeat(2, 1fr);
+        /* Dos columnas */
+    }
+
+    .grid h3 {
+        font-size: 1.8rem;
+        /* Ajusta tamaño del título en grillas */
+    }
+
+    .grid p {
+        font-size: 1rem;
+        /* Ajusta texto adicional */
+    }
+}
+
+/* Para pantallas de hasta 768px */
 @media (max-width: 768px) {
-.bento {
-grid-template-columns: repeat(2, 1fr);
-}
-.grid:nth-child(1) {
-grid-column: 1/3; /* Afecta el primer grid, ocupa toda la fila */
-}
-h1 {
-color: #f90000;
-}
+    h1 {
+        font-size: 2.5rem;
+        /* Tamaño reducido para pantallas medianas */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .bento {
+        grid-template-columns: repeat(2, 1fr);
+        /* Sigue con dos columnas */
+    }
+
+    .grid h3 {
+        font-size: 1.5rem;
+    }
+
+    .grid p {
+        font-size: 0.9rem;
+    }
 }
 
-/* Para pantallas de 480px o menos */
+/* Para pantallas de hasta 480px */
 @media (max-width: 480px) {
-.bento {
-grid-template-columns: repeat(1, 1fr); /* Todos los grids se muestran en una sola columna */
+    h1 {
+        font-size: 2rem;
+        /* Ajusta título principal */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        /* Ajusta subtítulo */
+    }
+
+    .bento {
+        grid-template-columns: repeat(1, 1fr);
+        /* Una sola columna */
+    }
+
+    .grid h3 {
+        font-size: 1.2rem;
+        /* Texto más pequeño */
+    }
+
+    .grid p {
+        font-size: 0.8rem;
+        /* Texto secundario reducido */
+    }
+
+    button {
+        font-size: 0.9rem;
+        /* Botones más pequeños */
+    }
 }
-.grid:nth-child(1) {
-grid-column: auto; /* Ajusta las columnas según el tamaño */
-}
-.grid:nth-child(4) {
-grid-column: auto;
-}
-h1 {
-color: #535ed63a;
-}
-}
+
+/* Clase auxiliar para tipografía */
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
+}
