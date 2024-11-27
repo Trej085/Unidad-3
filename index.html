@@ -15,12 +15,12 @@
 </head>
 
 <body>
-    <h1>Programación Web</h1>
-    <h2>Unidad 3</h2>
+    <h1 id=titulo>Programación Web</h1>
+    <h2 id="subtitulo">Unidad 3</h2>
 
     <div class="bento">
         <a href="Practicas-HTML/P1.html">
-            <div class="grid grid1">
+            <div id="grid">
                 <h3>Practica 1</h3>
                 <p>Uso de Consola</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -33,7 +33,7 @@
             </div>
         </a>
         <a href="Practicas-HTML/P2.html">
-            <div class="grid grid2">
+            <div id="grid">
                 <h3>Practica 2</h3>
                 <p>Solicitar datos al usuario</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -47,7 +47,7 @@
             </div>
         </a>
         <a href="Practicas-HTML/P3.html">
-            <div class="grid grid3">
+            <div id="grid">
                 <h3>Practica 3</h3>
                 <p>Funciones</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -61,7 +61,7 @@
             </div>
         </a>
         <a href="Practicas-HTML/P4-E1.html">
-            <div class="grid grid4">
+            <div id="grid">
                 <h3>Practica 4 - Ejercicio 1 </h3>
                 <p>Creacion de Objetos - Horario</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -77,7 +77,7 @@
 
         </a>
         <a href="Practicas-HTML/P4-E2.html">
-            <div class="grid grid5">
+            <div id="grid ">
                 <h3>Practica 4 - Ejercicio 2</h3>
                 <p>Objetos - Calificaciones, Suma y Promedio</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -92,7 +92,7 @@
         </a>
 
         <a href="Practicas-HTML/P5-E1.html">
-            <div class="grid grid6">
+            <div id="grid">
                 <h3>Practica 5 - Ejercicio 1</h3>
                 <p>Arreglos p1</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -107,7 +107,7 @@
         </a>
 
         <a href="Practicas-HTML/P5-E2.html">
-            <div class="grid grid7">
+            <div id="grid">
                 <h3>Practica 5 - Ejercicio 2</h3>
                 <p>Arreglos P2</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -122,7 +122,7 @@
         </a>
 
         <a href="Practicas-HTML/P5-E3.html">
-            <div class="grid grid8">
+            <div id="grid">
                 <h3>Practica 5 - Ejercicio 3</h3>
                 <p>Arreglos P3</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -137,7 +137,7 @@
         </a>
 
         <a href="Practicas-HTML/P6.html">
-            <div class="grid grid9">
+            <div id="grid">
                 <h3>Practica 6</h3>
                 <p>Manipulacion del DOOM</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -156,21 +156,33 @@
     <button class="button-modificar" onclick="cambiarBentoGrid()">Cambiar Diseño del Grid</button>
     
     <script> // Script del Boton
+        function cambiarTitulo(){
+            let titulo =document.getElementById('titulo');
+            titulo.innerText = 'PROGRAMACION WEB'
+            titulo.style.color='red';
+            subtitulo.style.color='red';
+        }
         function cambiarBentoGrid() {
             const bento = document.querySelector('.bento');
             const grids = document.querySelectorAll('.grid');
 
             // Cambiar el diseño del bento grid
-            bento.style.gridTemplateColumns = 'repeat(2, 1fr)';
+            bento.style.gridTemplateColumns = 'repeat(2, 1fr)'; // 2 columnas
             bento.style.gap = '2rem';
 
             // Cambiar el diseño de los grids individuales
-            grids.forEach((grid, index) => {
-                grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
-                grid.style.transform = 'rotate(2deg)';
-                grid.style.color = '#f4f4f4';
-                grid.style.transition = 'transform 0.5s ease, background-color 0.5s ease';
-            });
+            let grid = document.getElementById('grid');
+            grid.style.backgroundColor ='#ff6f61';
+            grid.style.transform = 'rotate(1deg)';
+            grid.style.color = '#f4f4f4';
+                grid.style.transition = 'transform 1.5s ease, background-color 1.5s ease';
+
+           // grids.forEach((grid, index) => {
+               // grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
+                //grid.style.transform = 'rotate(1deg)';
+               // grid.style.color = '#f4f4f4';
+                //grid.style.transition = 'transform 1.5s ease, background-color 1.5s ease';
+          //  });
         }
     </script>
 
