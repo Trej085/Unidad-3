@@ -1,46 +1,30 @@
-
-body{
+body {
     background-color: #060a33;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     color: white;
 }
-a{
+
+a {
     text-decoration: none;
-    color:#20bfc0e0;
+    color: #20bfc0e0;
 }
-h1{
+
+h1, h2 {
     text-align: center;
     font-size: 4rem;
     color: #DBD3D3;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
 }
-h2 {
-    text-align: center;
-    font-size: 3rem;
-    color: #DBD3D3;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-h3{
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: white ;  
-}
-.bento{
+
+.bento {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 1rem;
 }
 
-.grid{
-
+.grid {
     background-color: #17a8af85;
     padding: 0em;
     border-radius: .5em;
@@ -49,30 +33,22 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.grid h3{
-    font-size: 3em;
+.grid h3 {
+    font-size: 2.5em;
     color: aliceblue;
 }
-.grid p{
-    font-size: 1.5em;
+
+.grid p {
+    font-size: 1.2em;
     font-weight: 700;
-    margin-block-start: 0;
-     margin-block-end: 0;
 }
 
 .grid:hover {
-    background-color: #626ac26f ;
+    background-color: #626ac26f;
     transform: scale(1.05);
-    transition: transform 0.3s ease;
-    
-}
-
-.icon{
-    width: 3em;
-    height: auto;
 }
 
 .button-modificar {
