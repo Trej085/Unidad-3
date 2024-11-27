@@ -20,7 +20,7 @@
 
     <div class="bento">
         <a href="Practicas-HTML/P1.html">
-            <div class="grid1">
+            <div class="grid grid1">
                 <h3>Practica 1</h3>
                 <p>Uso de Consola</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -167,9 +167,8 @@
             // Cambiar el diseño de los grids individuales
             grids.forEach((grid, index) => {
                grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
-                grid.style.transform = 'rotate(1deg)';
                 grid.style.color = '#f4f4f4';
-                grid.style.transition = 'transform 1.5s ease, background-color 1.5s ease';
+                grid.style.transition = 'transform 0.5s ease, background-color 0.5s ease';
             });
         }
     </script>
