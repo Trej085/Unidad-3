@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <h1 id="titulo">Programación Web</h1>
-    <h2 id="subtitulo">Unidad 3</h2>
+    <h1 id="titulo">Portafolio</h1>
+    <h2 id="subtitulo">JavaScript</h2>
 
     <div class="bento">
         <a href="Practicas-HTML/P1.html">
@@ -154,7 +154,7 @@
     </div>
     </div>
     <button class="button-modificar" onclick="cambiarBentoGrid()">Cambiar Diseño del Grid</button>
-    
+
     <script> // Script del Boton
         function cambiarBentoGrid() {
             const bento = document.querySelector('.bento');
@@ -166,11 +166,18 @@
 
             // Cambiar el diseño de los grids individuales
             grids.forEach((grid, index) => {
-               grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
+                grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
                 grid.style.color = '#f4f4f4';
                 grid.style.transition = 'transform 0.5s ease, background-color 0.5s ease';
             });
-            
+            let titulo = document.getElementById("titulo");
+            titulo.innerText = "Programacion Web";
+            titulo.style.color = "blue";
+            titulo.style.fontSize = "4rem";
+
+            let subtitulo = document.getElementById("sutitulo");
+            subtitulo.innerText = "Unidad 3";
+
         }
     </script>
 
