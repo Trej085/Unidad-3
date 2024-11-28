@@ -1,6 +1,6 @@
 function cambiarDiseño() {
     let titulo = document.getElementById("titulo");
-    titulo.innerText = "Manipulacion del DOOM";
+    titulo.innerText = "Manipulacion del DOM";
     titulo.style.color = "#3f51b5";
 
     let nombrePractica = document.getElementById("nombrePractica");
