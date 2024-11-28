@@ -160,6 +160,8 @@
         function cambiarBentoGrid() {
             const bento = document.querySelector('.bento');
             const grids = document.querySelectorAll('.grid');
+            const body = document.querySelector('body');
+    
 
             // Cambiar el diseño del bento grid
             bento.style.gridTemplateColumns = 'repeat(2, 1fr)'; // 2 columnas
@@ -170,6 +172,7 @@
                 grid.style.backgroundColor = index % 2 === 0 ? '#ff6f61' : '#6f61ff';
                 grid.style.color = '#f4f4f4';
                 grid.style.transition = 'transform 0.5s ease, background-color 0.5s ease';
+   
             });
             // Cambiar el diseño del titulo
             let titulo = document.getElementById("titulo");
@@ -182,6 +185,7 @@
             subtitulo.innerText = "Unidad 3";
             subtitulo.style.color = "#rgb(247 247 247)";
 
+            // Cambiar Color de fondo
             body.style.backgroundColor = "#00305b";
 
         }

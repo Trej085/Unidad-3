@@ -1,7 +1,7 @@
 function cambiarDiseño() {
     let titulo = document.getElementById("titulo");
     titulo.innerText = "Manipulacion del DOOM";
-    titulo.style.caretColor = "#00aaff";
+    titulo.style.caretColor = "#3f51b5";
 
     let nombrePractica = document.getElementById("nombrePractica");
     nombrePractica.innerText = "Practica 6";
