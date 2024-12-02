@@ -23,13 +23,3 @@
       alert("El menú está vacío.");
     }
   }
-
-  // Función para eliminar la última película del menú desplegable
-  function eliminarUltimaPelicula() {
-    const menu = document.getElementById("menu");
-    if (menu.children.length > 0) {
-      menu.removeChild(menu.lastElementChild);
-    } else {
-      alert("El menú está vacío.");
-    }
-  }

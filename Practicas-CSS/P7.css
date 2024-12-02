@@ -73,7 +73,6 @@ h1 {
   }
 
   .acciones {
-    justify-content: center;
     margin: 20px;
     display: flex;
     gap: 10px;
