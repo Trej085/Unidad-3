@@ -1,38 +1,44 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
-  }
-  .menu-container {
-    margin-bottom: 20px;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 20px; /* Espaciado entre elementos */
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  li {
     margin: 0;
+    padding: 0;
   }
-  a {
+  .contenedor-navegacion {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  .nav-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espacio entre enlaces */
+    padding: 15px 0;
+  }
+  .nav-principal a {
     text-decoration: none;
     color: #007BFF;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
   }
-  a:hover {
-    color: #0056b3;
+  .nav-principal a:hover {
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+  }
+  .acciones {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
   }
   button {
     padding: 10px;
-    margin: 5px 0;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
   }
   button:hover {
     background-color: #0056b3;
