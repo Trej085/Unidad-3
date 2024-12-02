@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 7 - Menú de Navegación</title>
+
+</head>
+<body>
+  <h1>Práctica 7 - Menú de Navegación</h1>
+  
+  <div class="menu-container">
+    <h2>Menú de tus películas favoritas</h2>
+    <ul id="menu">
+      <li>El Señor de los Anillos</li>
+      <li>Matrix</li>
+      <li>Inception</li>
+      <li>Avengers: Endgame</li>
+      <li>Interstellar</li>
+    </ul>
+  </div>
+  
+  <button onclick="eliminarPrimerElemento()">Eliminar primer elemento</button>
+  <button onclick="agregarElemento()">Agregar nuevo enlace</button>
+
+  <script>
+    // Función para eliminar el primer elemento del menú
+    function eliminarPrimerElemento() {
+      const menu = document.getElementById("menu");
+      if (menu.children.length > 0) {
+        menu.removeChild(menu.firstElementChild);
+      } else {
+        alert("El menú ya está vacío.");
+      }
+    }
+
+    // Función para agregar un nuevo elemento al menú
+    function agregarElemento() {
+      const nuevaPelicula = prompt("Introduce el nombre de una nueva película:");
+      if (nuevaPelicula) {
+        const menu = document.getElementById("menu");
+        const nuevoElemento = document.createElement("li");
+        nuevoElemento.textContent = nuevaPelicula;
+        menu.appendChild(nuevoElemento);
+      } else {
+        alert("No se agregó ninguna película.");
+      }
+    }
+  </script>
+</body>
+</html>
