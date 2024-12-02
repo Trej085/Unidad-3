@@ -9,13 +9,17 @@
 <body>
   <h1>Práctica 7 - Menú de Peliculas</h1>
   
+  
   <div class="contenedor-navegacion">
-    <nav class="nav-principal contenedor" id="menu">
-      <a href="#pelicula1">El Señor de los Anillos</a>
-      <a href="#pelicula2">Matrix</a>
-      <a href="#pelicula3">Inception</a>
-      <a href="#pelicula4">Avengers: Endgame</a>
-      <a href="#pelicula5">Interstellar</a>
+    <nav class="nav-principal">
+      <a href="#">Películas</a>
+      <ul class="menu-desplegable" id="menu">
+        <li><a href="#pelicula1">El Señor de los Anillos</a></li>
+        <li><a href="#pelicula2">Matrix</a></li>
+        <li><a href="#pelicula3">Inception</a></li>
+        <li><a href="#pelicula4">Avengers: Endgame</a></li>
+        <li><a href="#pelicula5">Interstellar</a></li>
+      </ul>
     </nav>
   </div>
 
@@ -24,36 +28,8 @@
     <button onclick="eliminarPrimeraPelicula()">Eliminar primera película</button>
     <button onclick="eliminarUltimaPelicula()">Eliminar última película</button>
   </div>
-  
-  <button onclick="eliminarPrimerElemento()">Eliminar primer elemento</button>
-  <button onclick="agregarElemento()">Agregar nuevo enlace</button>
 
-  <script>
-    // Función para eliminar el primer elemento del menú
-    function eliminarPrimerElemento() {
-      const menu = document.getElementById("menu");
-      if (menu.children.length > 0) {
-        menu.removeChild(menu.firstElementChild);
-      } else {
-        alert("El menú ya está vacío.");
-      }
-    }
 
-    // Función para agregar un nuevo elemento al menú
-    function agregarElemento() {
-      const nuevaPelicula = prompt("Introduce el nombre de una nueva película:");
-      if (nuevaPelicula) {
-        const menu = document.getElementById("menu");
-        const nuevoElemento = document.createElement("li");
-        const enlace = document.createElement("a");
-        enlace.href = "#";
-        enlace.textContent = nuevaPelicula;
-        nuevoElemento.appendChild(enlace);
-        menu.appendChild(nuevoElemento);
-      } else {
-        alert("No se agregó ninguna película.");
-      }
-    }
   </script>
 </body>
 </html>
