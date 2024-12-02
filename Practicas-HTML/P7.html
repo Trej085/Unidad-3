@@ -12,11 +12,11 @@
   <div class="menu-container">
     <h2>Menú de tus películas favoritas</h2>
     <ul id="menu">
-      <li>El Señor de los Anillos</li>
-      <li>Matrix</li>
-      <li>Inception</li>
-      <li>Avengers: Endgame</li>
-      <li>Interstellar</li>
+      <li><a href="#">El Señor de los Anillos</a></li>
+      <li><a href="#">Matrix</a></li>
+      <li><a href="#">Inception</a></li>
+      <li><a href="#">Avengers: Endgame</a></li>
+      <li><a href="#">Interstellar</a></li>
     </ul>
   </div>
   
@@ -40,7 +40,10 @@
       if (nuevaPelicula) {
         const menu = document.getElementById("menu");
         const nuevoElemento = document.createElement("li");
-        nuevoElemento.textContent = nuevaPelicula;
+        const enlace = document.createElement("a");
+        enlace.href = "#";
+        enlace.textContent = nuevaPelicula;
+        nuevoElemento.appendChild(enlace);
         menu.appendChild(nuevoElemento);
       } else {
         alert("No se agregó ninguna película.");
