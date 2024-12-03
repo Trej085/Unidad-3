@@ -24,7 +24,7 @@ function verificarPar() {
 }
 
 // Ejercicio 3: Transformar array con .map
-function Map() {
+function Mapp() {
     let numeros = [2, 4, 6, 8, 10];
     let cubos = numeros.map(num => num ** 3);
     alert(`Números originales: ${numeros}\nCubo: ${cubos}`);
