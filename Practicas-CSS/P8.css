@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #060a33;
-    color: #ecf0f1;
     text-align: center;
     padding: 20px;
 }
@@ -31,7 +30,7 @@ button {
     padding: 10px 20px;    
     font-size: 16px;
     cursor: pointer;
-    background-color: #e74c3c;
+    background-color: #20bfc0;
     border: none;
     border-radius: 5px;
     color: white;
