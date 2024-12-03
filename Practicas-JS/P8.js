@@ -6,11 +6,9 @@ const esPar = (num) => num % 2 === 0;
 
 //Ejercicio 1 Función para manejar la suma
 function Suma() {
-    const a = parseInt(prompt("Ingrese el primer número:"));
-    const b = parseInt(prompt("Ingrese el segundo número:"));
-    const suma = (a, b) => {
-        return a + b;
-    }
+    const num1 = parseInt(prompt("Ingrese el primer número:"));
+    const num2 = parseInt(prompt("Ingrese el segundo número:"));
+    alert(`La suma de ${num1} y ${num2} es: ${suma(num1, num2)}`);
     console.log(suma);
 }
 
@@ -39,7 +37,7 @@ function extraerNombres() {
         { nombre: "Adan", edad: 22 },
         { nombre: "Diana", edad: 21 },
         { nombre: "Diego", edad: 20 },
-        { nombre: "Jonathan", edad: 20 }
+        { nombre: "Jonathan", edad: 20}
     ];
     const obtenerNombres = (arr) => arr.map(persona => persona.nombre);
     const nombres = obtenerNombres(personas);
