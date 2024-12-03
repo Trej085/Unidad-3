@@ -6,10 +6,14 @@ const esPar = (num) => num % 2 === 0;
 
 //Ejercicio 1 Función para manejar la suma
 function Suma() {
-    const num1 = parseInt(prompt("Ingrese el primer número:"));
-    const num2 = parseInt(prompt("Ingrese el segundo número:"));
-    alert(`La suma de ${num1} y ${num2} es: ${suma(num1, num2)}`);
+    const a = parseInt(prompt("Ingrese el primer número:"));
+    const b = parseInt(prompt("Ingrese el segundo número:"));
+    const suma = (a, b) => {
+        return a + b;
+    }
+    console.log(suma);
 }
+
 
 // Ejercicio 2 Función para determinar si un numero es impar o par
 function verificarPar() {
@@ -23,9 +27,10 @@ function verificarPar() {
 
 // Ejercicio 3: Transformar array con .map
 function Map() {
-    const numeros = [1, 2, 3, 4, 5];
-    const cubos = numeros.map(num => num ** 3);
+    let numeros = [2, 4, 6, 8, 10];
+    let cubos = numeros.map(num => num ** 3);
     alert(`Números originales: ${numeros}\nCubo: ${cubos}`);
+    console.log(cubos); // [8,64,216,512,1000]
 }
 
 // Ejercicio 4: Extraer nombres de una lista de objetos
@@ -34,7 +39,7 @@ function extraerNombres() {
         { nombre: "Adan", edad: 22 },
         { nombre: "Diana", edad: 21 },
         { nombre: "Diego", edad: 20 },
-        { nombre: "Jonathan", edad: 20}
+        { nombre: "Jonathan", edad: 20 }
     ];
     const obtenerNombres = (arr) => arr.map(persona => persona.nombre);
     const nombres = obtenerNombres(personas);
