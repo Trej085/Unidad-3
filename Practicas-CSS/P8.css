@@ -24,27 +24,20 @@ p {
     gap: 10px;               
     margin-top: 20px;        
 }
-.bento {
-    display: grid;                     /* Configuración de cuadrícula */
-    grid-template-columns: repeat(2, 1fr); /* Tres columnas de igual ancho */
-    gap: 1rem;                         /* Espaciado entre los elementos */
-    padding: 1rem;                     /* Margen interno del contenedor */
+
+button {
+    margin: 0;              
+    padding: 10px 20px;    
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #20bfc0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
 }
 
-/* Estilo de los botones */
-.button {
-    background-color: #0ecbd5;         /* Color de fondo inicial */
-    color: white;                      /* Color del texto */
-    padding: 1rem;                     /* Margen interno */
-    border: none;                      /* Sin borde */
-    border-radius: 0.5rem;             /* Bordes redondeados */
-    text-align: center;                /* Alineación del texto */
-    font-size: 1.2em;                  /* Tamaño del texto */
-    cursor: pointer;                   /* Cursor tipo puntero */
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.button:hover {
-    background-color: #075155;         /* Color al pasar el cursor */
-    transform: scale(1.05);            /* Efecto de ampliación */
+button:hover {
+    background-color: #051cec;
+    transform: scale(1.1);
 }
