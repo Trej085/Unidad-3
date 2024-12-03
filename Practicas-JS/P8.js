@@ -4,13 +4,13 @@ const suma = (a, b) => a + b;
 // Función esPar
 const esPar = (num) => num % 2 === 0;
 
-//Ejercicio 1 Función para manejar la suma
-function Suma() {
+ // Función para manejar el botón de suma
+ function mostrarSuma() {
     const num1 = parseInt(prompt("Ingrese el primer número:"));
     const num2 = parseInt(prompt("Ingrese el segundo número:"));
     alert(`La suma de ${num1} y ${num2} es: ${suma(num1, num2)}`);
-    console.log(suma);
 }
+
 
 
 // Ejercicio 2 Función para determinar si un numero es impar o par
