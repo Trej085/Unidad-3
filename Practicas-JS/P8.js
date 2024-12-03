@@ -28,7 +28,6 @@ function Map() {
     let numeros = [2, 4, 6, 8, 10];
     let cubos = numeros.map(num => num ** 3);
     alert(`Números originales: ${numeros}\nCubo: ${cubos}`);
-    console.log(cubos); // [8,64,216,512,1000]
 }
 
 // Ejercicio 4: Extraer nombres de una lista de objetos
