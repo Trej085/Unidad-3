@@ -41,5 +41,5 @@ function extraerNombres() {
     ];
     const obtenerNombres = (arr) => arr.map(persona => persona.nombre);
     const nombres = obtenerNombres(personas);
-    alert(`Nombres extraídos: ${nombres.join(", ")}`);
+    alert(`Nombres: ${nombres.join(", ")}`);
 }

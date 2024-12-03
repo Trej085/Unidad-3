@@ -12,6 +12,13 @@ h1 {
     color: #DBD3D3;
 }
 
+p {
+    text-align: center;
+    font-size: 2rem;
+    color: #DBD3D3;
+}
+
+
 button {
     display: block;
     margin: 2rem auto;
