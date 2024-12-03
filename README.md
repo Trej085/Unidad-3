@@ -37,5 +37,20 @@ Uso de Funciones organizadas
 
 # Prcatica 6 - Manipulacion del DOOM
 
+# Prcatica 7 - querySelector
+
+- ¿Se podrá realizar la selección de un hijo de otro elemento que ya es un hijo?
+
+1. getElementById: Selecciona el elemento con el ID padre.
+2. querySelector: Permite buscar elementos dentro de otro elemento específico (en este caso, el hijo o el nieto).
+3. Acceso jerárquico: Al identificar al hijo, se puede seguir buscando dentro de él para encontrar a su propio hijo (nieto).
+
+# Prcatica 8 - Arrow Functions
+
+
+
+
+
+
 
 
